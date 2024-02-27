@@ -1,14 +1,18 @@
+# Cargamos todas las librerías que ocuparemos en el proyecto:
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+# Cargamos el conjunto de datos de anuncios de ventas de coches
 car_data = pd.read_csv(
     '/Users/eruggeri/Pythons_Projects/Sprint_5/vehicles_us.csv')
 
+# Generamos un encabezado
 st.header('Cuadro de Mandos de la Aplicación Web')
 st.write('Conjunto de datos de anuncios de venta de coches')
 
-hist_button = st.button('Construir histograma')  # crear un botón histograma
+# creamos un botón para el histograma
+hist_button = st.button('Construir histograma')
 
 if hist_button:  # al hacer clic en el botón histograma
     # escribir un mensaje
@@ -21,7 +25,7 @@ if hist_button:  # al hacer clic en el botón histograma
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
 
-# crear un botón dispersión
+# crear un botón para el gráfico de dispersión
 disp_button = st.button('Construir Gráfico Dispersión')
 
 if disp_button:  # al hacer clic en el botón
