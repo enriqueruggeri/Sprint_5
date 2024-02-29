@@ -7,4 +7,6 @@ a través de la aplicación web.
 La URL de la aplicación en render es:
   Network URL: http://10.223.86.88:8501
   External URL: http://34.213.214.55:8501
-  
+
+Además el link a la app onrender es el siguiente:  https://sprint-5-xngb.onrender.com
+
