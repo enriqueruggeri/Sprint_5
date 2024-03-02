@@ -5,7 +5,7 @@ import streamlit as st
 
 # Cargamos el conjunto de datos de anuncios de ventas de coches
 car_data = pd.read_csv(
-    '/Users/eruggeri/Pythons_Projects/Sprint_5/vehicles_us.csv')
+    'vehicles_us.csv')
 
 # Generamos un encabezado
 st.header('Cuadro de Mandos de la Aplicación Web')
